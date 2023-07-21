@@ -25,6 +25,7 @@ export const AppReducer = (state, action) => {
                     ...state,
                 };
             } else {
+                //alert("Input value must be number")
                 alert("Cannot increase the allocation! Out of funds");
                 return {
                     ...state
@@ -63,6 +64,7 @@ export const AppReducer = (state, action) => {
 
             return {
                 ...state,
+                budget
             };
         case 'CHG_CURRENCY':
             action.type = "DONE";
